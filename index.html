@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youth Network — Frivillig organisasjon i Drammen. Vi styrker ungdommen for en bærekraftig fremtid gjennom Erasmus+ prosjekter og interkulturell dialog." />
+  <meta name="keywords" content="Youth Network, Drammen, Erasmus+, ungdom, frivillig, bærekraft, inkludering" />
+  <meta name="author" content="Youth Network" />
+  <meta property="og:title" content="Youth Network — Styrker ungdommen" />
+  <meta property="og:description" content="Frivillig ungdomsorganisasjon i Drammen, Norge. OID: E10341853" />
+  <meta property="og:type" content="website" />
+  <title>Youth Network — Styrker ungdommen for en bærekraftig fremtid</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%238E24AA'/><text y='67' x='50' text-anchor='middle' font-size='52' fill='white' font-family='sans-serif' font-weight='900'>Y</text></svg>" />
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════
+     SCROLL PROGRESS BAR
+══════════════════════════════════ -->
+<div id="progress-bar" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════
+     NAVIGATION
+══════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Hovednavigasjon">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo" aria-label="Youth Network – hjem">
+      <div class="nav-logo-mark" aria-hidden="true">YN</div>
+      <div class="nav-logo-text">
+        Youth Network
+        <small>Drammen, Norge</small>
+      </div>
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="nav-links" role="list">
+      <li><a href="#hero"          data-nav-label class="active">Hjem</a></li>
+      <li><a href="#intro"         data-nav-label>Om oss</a></li>
+      <li><a href="#prosjekter"    data-nav-label>Prosjekter</a></li>
+      <li><a href="#muligheter"    data-nav-label>Muligheter</a></li>
+      <li><a href="#kontakt"       data-nav-label>Kontakt</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button class="lang-toggle" aria-label="Bytt språk">🇬🇧 EN</button>
+      <button class="hamburger" id="hamburger" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilmeny">
+  <a href="#hero"       data-nav-label>🏠 Hjem</a>
+  <a href="#intro"      data-nav-label>👥 Om oss</a>
+  <a href="#prosjekter" data-nav-label>📋 Prosjekter</a>
+  <a href="#muligheter" data-nav-label>🌟 Muligheter</a>
+  <a href="#kontakt"    data-nav-label>✉️ Kontakt</a>
+  <div class="mobile-lang">
+    <button class="lang-toggle" aria-label="Switch language">🇬🇧 EN</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section id="hero" aria-label="Velkomstseksjon">
+  <div class="hero-bg-dots" aria-hidden="true"></div>
+  <!-- Ambient orbs -->
+  <div class="hero-orb orb-purple" aria-hidden="true"></div>
+  <div class="hero-orb orb-sky"    aria-hidden="true"></div>
+  <div class="hero-orb orb-green"  aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-dot" aria-hidden="true"></div>
+      <span id="hero-eyebrow-text">Drammen, Norge · Est. 2023</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span id="hero-t1">Styrker ungdommen</span><br>
+      <span id="hero-t2" class="accent-word">for en bærekraftig</span><br>
+      <span id="hero-t3">fremtid</span>
+    </h1>
+
+    <p class="hero-sub" id="hero-sub-text">
+      Youth Network er et flerkulturelt fellesskap som jobber for inkludering, europeisk dialog og en bedre fremtid for unge.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#prosjekter" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span id="hero-cta1">Utforsk våre prosjekter</span>
+      </a>
+      <a href="#muligheter" class="btn btn-outline" id="hero-cta2">Bli med oss</a>
+    </div>
+
+    <!-- Five-color strip -->
+    <div class="hero-strip" aria-hidden="true">
+      <div class="hero-strip-bar" style="background:var(--color-purple)"></div>
+      <div class="hero-strip-bar" style="background:var(--color-sky)"></div>
+      <div class="hero-strip-bar" style="background:var(--color-green)"></div>
+      <div class="hero-strip-bar" style="background:var(--color-yellow)"></div>
+      <div class="hero-strip-bar" style="background:var(--color-orange)"></div>
+      <span class="hero-strip-label">5 verdier · 1 fellesskap</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     INTRO / OM OSS (kort)
+══════════════════════════════════ -->
+<section id="intro" aria-label="Om Youth Network">
+  <div class="container">
+    <div class="intro-grid">
+
+      <!-- Left: Visual -->
+      <div class="intro-visual fade-up">
+        <div class="intro-ring" aria-hidden="true">
+          <!-- Five figure dots placed around a circle (r=110px from center 140,140) -->
+          <!-- Top -->
+          <div class="figure-dot" style="background:var(--color-purple);top:10px;left:calc(50% - 27px);">👤</div>
+          <!-- Top-right -->
+          <div class="figure-dot" style="background:var(--color-sky);top:75px;right:15px;">👤</div>
+          <!-- Bottom-right -->
+          <div class="figure-dot" style="background:var(--color-green);bottom:40px;right:28px;">👤</div>
+          <!-- Bottom-left -->
+          <div class="figure-dot" style="background:var(--color-yellow);bottom:40px;left:28px;">👤</div>
+          <!-- Top-left -->
+          <div class="figure-dot" style="background:var(--color-orange);top:75px;left:15px;">👤</div>
+
+          <div class="intro-ring-center">
+            <strong>2023</strong>
+            <span>Stiftet</span>
+          </div>
+        </div>
+
+        <div class="intro-stats">
+          <div class="stat-card">
+            <div class="stat-num" style="color:var(--color-purple)">2017</div>
+            <div class="stat-label">Erfaring siden</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" style="color:var(--color-sky)">4+</div>
+            <div class="stat-label">Erasmus+ prosjekter</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" style="color:var(--color-green)">10+</div>
+            <div class="stat-label">Partnerland</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" style="color:var(--color-orange)">100+</div>
+            <div class="stat-label">Ungdommer nådd</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text -->
+      <div class="fade-up delay-2">
+        <div class="section-tag" style="background:rgba(142,36,170,0.1);color:var(--color-purple);">Om oss</div>
+        <h2 class="section-heading">Et flerkulturelt ungdomsfellesskap</h2>
+        <p class="section-sub" style="max-width:100%;margin-bottom:1.5rem;">
+          Youth Network er en frivillig organisasjon etablert i 2023 i Drammen, med røtter og erfaring i ungdomsarbeid helt tilbake til 2017. Vi er et flerkulturelt team bestående av både ungdommer med innvandrerbakgrunn og ungdommer av norsk opprinnelse.
+        </p>
+        <p style="color:var(--color-muted);font-size:0.95rem;line-height:1.75;margin-bottom:2rem;">
+          Vårt mål er å skape et sterkt team av europeiske borgere med ulik kulturell, utdanningsmessig og økonomisk bakgrunn som deler felles europeiske verdier. Vi jobber for aktivt medborgerskap, inkludering og bærekraft.
+        </p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="#intro" class="btn btn-primary">Les mer om oss</a>
+          <a href="#kontakt" class="btn" style="border:2px solid var(--color-border);color:var(--color-text);">Kontakt oss</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     KJERNEOMRÅDER
+══════════════════════════════════ -->
+<section id="kjerneomrader" aria-label="Kjerneområder">
+  <div class="container">
+    <div class="areas-header fade-up">
+      <div class="section-tag" style="background:rgba(41,182,246,0.1);color:var(--color-sky);">Hva vi gjør</div>
+      <h2 class="section-heading">Våre kjerneområder</h2>
+      <p class="section-sub">Fire pilarer som driver arbeidet vårt for en bedre og mer inkluderende verden.</p>
+    </div>
+
+    <div class="areas-grid">
+
+      <div class="area-card fade-up delay-1" style="--accent:var(--color-green)">
+        <style>.area-card:nth-child(1)::before{background:var(--color-green)}</style>
+        <div class="area-icon" style="background:rgba(102,187,106,0.12);">🌱</div>
+        <h3>Bærekraft og miljøutdanning</h3>
+        <p>Vi øker bevisstheten om klimakrisen og forurensning, og fremmer grønn mobilitet og miljøvennlige løsninger blant unge.</p>
+      </div>
+
+      <div class="area-card fade-up delay-2">
+        <style>.area-card:nth-child(2)::before{background:var(--color-purple)}</style>
+        <div class="area-icon" style="background:rgba(142,36,170,0.1);">🗳️</div>
+        <h3>Aktivt medborgerskap</h3>
+        <p>Vi styrker ungdoms samfunnsengasjement, demokrati og ytringsfrihet gjennom praktiske prosjekter og workshops.</p>
+      </div>
+
+      <div class="area-card fade-up delay-3">
+        <style>.area-card:nth-child(3)::before{background:var(--color-orange)}</style>
+        <div class="area-icon" style="background:rgba(255,112,67,0.1);">⚽</div>
+        <h3>Inkludering via idrett</h3>
+        <p>Vi fremmer en aktiv og sunn livsstil, mental helse og velvære gjennom sport som et verktøy for sosial inkludering.</p>
+      </div>
+
+      <div class="area-card fade-up delay-4">
+        <style>.area-card:nth-child(4)::before{background:var(--color-sky)}</style>
+        <div class="area-icon" style="background:rgba(41,182,246,0.1);">🤝</div>
+        <h3>Interkulturell dialog</h3>
+        <p>Vi fremmer toleranse og solidaritet for å bekjempe xenofobi og rasisme, og bygger broer mellom kulturer i Europa.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     TEAM
+══════════════════════════════════ -->
+<section id="team" aria-label="Teamet vårt">
+  <div class="container">
+    <div class="team-header fade-up">
+      <div class="section-tag" style="background:rgba(255,202,40,0.15);color:var(--color-yellow);">Menneskene bak</div>
+      <h2 class="section-heading">Styret og teamet</h2>
+      <p class="section-sub">Et dedikert og mangfoldig team som brenner for ungdomsarbeid og europeisk samarbeid.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card fade-up delay-1">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--color-purple),#6a1080);">AK</div>
+        <h3>Asaf Kaya</h3>
+        <p class="role">Styreleder / President<br>Prosjektkoordinator</p>
+      </div>
+
+      <div class="team-card fade-up delay-2">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--color-sky),#1a8ab5);">CK</div>
+        <h3>Cafer Kilinc</h3>
+        <p class="role">Kontaktperson<br>Prosjektleder · Erasmus+-ekspert</p>
+      </div>
+
+      <div class="team-card fade-up delay-3">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--color-green),#3d8b42);">İK</div>
+        <h3>İdris Kocoglu</h3>
+        <p class="role">Formidling, bærekraft<br>&amp; oppfølgingsaktiviteter</p>
+      </div>
+
+      <div class="team-card fade-up delay-4">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--color-orange),#c44a23);">AK</div>
+        <h3>Alexander Kaya</h3>
+        <p class="role">Sosiale medier-ansvarlig<br>&amp; online trender</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     PROSJEKTER
+══════════════════════════════════ -->
+<section id="prosjekter" aria-label="Prosjekter">
+  <div class="container">
+    <div class="projects-header fade-up">
+      <div class="section-tag" style="background:rgba(102,187,106,0.1);color:var(--color-green);">Erasmus+ &amp; Mer</div>
+      <h2 class="section-heading">Våre prosjekter</h2>
+      <p class="section-sub" style="margin-bottom:0;">Fra lokale aktiviteter i Drammen til internasjonale ungdomsutvekslinger i Europa.</p>
+    </div>
+
+    <div class="projects-tabs">
+      <button class="tab-btn active" data-filter="all">Alle prosjekter</button>
+      <button class="tab-btn" data-filter="active">Aktive prosjekter</button>
+      <button class="tab-btn" data-filter="previous">Tidligere prosjekter</button>
+      <button class="tab-btn" data-filter="local">Lokale aktiviteter</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-up delay-1" data-cat="active">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(41,182,246,0.15),rgba(142,36,170,0.15));">
+          🌍
+          <span class="project-badge" style="color:var(--color-green);">● Aktiv</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Green Futures Exchange</h3>
+          <p>Ungdomsutveksling om klimabevissthet og grønn mobilitet. 30 deltakere fra 6 europeiske land.</p>
+          <a href="#muligheter" class="btn btn-sky" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Søk nå →</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-up delay-2" data-cat="active">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(102,187,106,0.15),rgba(255,202,40,0.15));">
+          🏃
+          <span class="project-badge" style="color:var(--color-green);">● Aktiv</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Sport4Inclusion</h3>
+          <p>Sport som verktøy for sosial inkludering. Workshops, turneringer og mental helse-fokus.</p>
+          <a href="#muligheter" class="btn btn-green" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Søk nå →</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-up delay-3" data-cat="previous">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(255,112,67,0.12),rgba(142,36,170,0.12));">
+          🗳️
+          <span class="project-badge" style="color:var(--color-muted);">Avsluttet</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Democracy in Action</h3>
+          <p>Kurs om demokratiske verdier og unges deltakelse i samfunnet. Gjennomført 2024 i Portugal.</p>
+          <button class="btn" style="font-size:0.85rem;padding:0.55rem 1.2rem;border:1.5px solid var(--color-border);color:var(--color-muted);cursor:default;">Avsluttet</button>
+        </div>
+      </div>
+
+      <div class="project-card fade-up delay-1" data-cat="local">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(255,202,40,0.15),rgba(255,112,67,0.1));">
+          🇳🇴
+          <span class="project-badge" style="color:var(--color-sky);">Lokalt</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Kulturkveld i Drammen</h3>
+          <p>Månedlige interkulturelle samlinger i Drammen sentrum. Åpent for alle! Mat, musikk og dialog.</p>
+          <a href="#kontakt" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Bli med</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-up delay-2" data-cat="local">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(142,36,170,0.1),rgba(41,182,246,0.12));">
+          🎓
+          <span class="project-badge" style="color:var(--color-sky);">Lokalt</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Ungdomsakademi</h3>
+          <p>Gratis kurs og workshops for unge i Drammen: CV-skriving, intervjuteknikk og lederutvikling.</p>
+          <a href="#kontakt" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Meld deg på</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-up delay-3" data-cat="active">
+        <div class="project-card-header" style="background:linear-gradient(135deg,rgba(255,202,40,0.12),rgba(102,187,106,0.12));">
+          🤝
+          <span class="project-badge" style="color:var(--color-green);">● Aktiv</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Bridge Builders</h3>
+          <p>Europeisk frivillig tjeneste fokusert på interkulturell dialog og anti-diskriminering. 12 måneder.</p>
+          <a href="#muligheter" class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">Søk nå →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     MULIGHETER
+══════════════════════════════════ -->
+<section id="muligheter" aria-label="Muligheter og åpne utlysninger">
+  <div class="container">
+    <div class="fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:0.5rem;">
+      <div>
+        <div class="section-tag" style="background:rgba(255,112,67,0.1);color:var(--color-orange);">Open Calls</div>
+        <h2 class="section-heading" style="margin-bottom:0.5rem;">Åpne muligheter</h2>
+        <p class="section-sub">Delta i ungdomsutvekslinger, kurs og frivillig arbeid gjennom Erasmus+.</p>
+      </div>
+    </div>
+
+    <div class="opp-grid">
+
+      <div class="opp-card fade-up delay-1">
+        <div class="opp-meta">
+          <span class="opp-tag" style="background:rgba(41,182,246,0.1);color:var(--color-sky);">Ungdomsutveksling</span>
+          <span class="opp-tag" style="background:rgba(102,187,106,0.1);color:var(--color-green);">Erasmus+</span>
+        </div>
+        <h3>Green Futures Exchange 2025</h3>
+        <p>7-dagers ungdomsutveksling om bærekraft og klima. Åpen for unge mellom 18–30 år. Reise og kost dekkes.</p>
+        <div class="opp-deadline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Frist: 15. august 2025
+        </div>
+        <button class="btn btn-primary apply-btn" data-project="Green Futures Exchange 2025" style="width:100%;justify-content:center;">
+          Søk nå
+        </button>
+      </div>
+
+      <div class="opp-card fade-up delay-2">
+        <div class="opp-meta">
+          <span class="opp-tag" style="background:rgba(142,36,170,0.1);color:var(--color-purple);">Frivillig arbeid</span>
+          <span class="opp-tag" style="background:rgba(255,112,67,0.1);color:var(--color-orange);">12 måneder</span>
+        </div>
+        <h3>Europeisk frivillig tjeneste — Bridge Builders</h3>
+        <p>Langsiktig frivillig arbeid i Europa med fokus på interkulturell dialog og anti-diskriminering. Full støtte.</p>
+        <div class="opp-deadline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Løpende opptak
+        </div>
+        <button class="btn btn-primary apply-btn" data-project="Bridge Builders – Europeisk frivillig tjeneste" style="width:100%;justify-content:center;">
+          Søk nå
+        </button>
+      </div>
+
+      <div class="opp-card fade-up delay-3">
+        <div class="opp-meta">
+          <span class="opp-tag" style="background:rgba(255,202,40,0.12);color:#b88c00;">Kurs</span>
+          <span class="opp-tag" style="background:rgba(102,187,106,0.1);color:var(--color-green);">Erasmus+</span>
+        </div>
+        <h3>Ungdomsleder-kurs — Leadership for Change</h3>
+        <p>Kompetansehevende kurs for ungdomsarbeidere og ledere. Nettverksbygging og praktiske verktøy.</p>
+        <div class="opp-deadline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Frist: 1. september 2025
+        </div>
+        <button class="btn btn-primary apply-btn" data-project="Leadership for Change – Ungdomsleder-kurs" style="width:100%;justify-content:center;">
+          Søk nå
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     KONTAKT
+══════════════════════════════════ -->
+<section id="kontakt" aria-label="Kontaktinformasjon og skjema">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="fade-up">
+        <div class="section-tag" style="background:rgba(41,182,246,0.1);color:var(--color-sky);">Ta kontakt</div>
+        <h2 class="section-heading">Vi hører gjerne fra deg</h2>
+        <p style="color:var(--color-muted);margin-bottom:2rem;">
+          Har du spørsmål om prosjekter, samarbeid eller ønsker å bli med i nettverket? Kontakt oss gjerne!
+        </p>
+
+        <div class="contact-persons">
+
+          <div class="contact-person">
+            <div class="cp-avatar" style="background:var(--color-purple);">AK</div>
+            <div class="cp-details">
+              <h4>Asaf Kaya</h4>
+              <p class="cp-role">Styreleder / President &amp; Prosjektkoordinator</p>
+              <a href="tel:+4796822343">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +47 968 22 343
+              </a>
+              <a href="mailto:asafkaya1982@gmail.com">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                asafkaya1982@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-person">
+            <div class="cp-avatar" style="background:var(--color-sky);">CK</div>
+            <div class="cp-details">
+              <h4>Cafer Kilinc</h4>
+              <p class="cp-role">Kontaktperson &amp; Prosjektleder</p>
+              <a href="tel:+4794249957">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +47 942 49 957
+              </a>
+              <a href="mailto:Youthnetwork.no@gmail.com">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Youthnetwork.no@gmail.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap fade-up delay-2">
+        <h3>Send oss en melding</h3>
+        <!-- Replace action value with your Formspree endpoint: https://formspree.io -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Navn *</label>
+              <input type="text" id="cf-name" name="name" placeholder="Ditt navn" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">E-post *</label>
+              <input type="email" id="cf-email" name="email" placeholder="din@epost.no" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Emne</label>
+            <select id="cf-subject" name="subject">
+              <option value="">Velg emne</option>
+              <option>Generell henvendelse</option>
+              <option>Prosjektsamarbeid</option>
+              <option>Bli frivillig</option>
+              <option>Erasmus+ spørsmål</option>
+              <option>Annet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Melding *</label>
+            <textarea id="cf-message" name="message" placeholder="Skriv meldingen din her…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Send melding
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:1rem;">
+          <div class="nav-logo-mark">YN</div>
+          <div class="nav-logo-text">
+            Youth Network
+            <small>Drammen, Norge</small>
+          </div>
+        </div>
+        <p>Frivillig ungdomsorganisasjon som styrker unge for en bærekraftig fremtid gjennom europeisk dialog, inkludering og aktivt medborgerskap.</p>
+        <div class="footer-oid">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          OID: E10341853
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Navigasjon</h4>
+        <ul>
+          <li><a href="#hero">Hjem</a></li>
+          <li><a href="#intro">Om oss</a></li>
+          <li><a href="#prosjekter">Prosjekter</a></li>
+          <li><a href="#muligheter">Muligheter</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:Youthnetwork.no@gmail.com">Youthnetwork.no@gmail.com</a></li>
+          <li><a href="tel:+4794249957">+47 942 49 957</a></li>
+          <li><a href="#">Drammen, Norge</a></li>
+          <li><a href="mailto:asafkaya1982@gmail.com">asafkaya1982@gmail.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Youth Network. Alle rettigheter forbeholdt. Stiftet 05.08.2023 i Drammen.</span>
+      <div class="color-dots" aria-hidden="true" title="Fem verdier, ett fellesskap">
+        <div class="color-dot" style="background:var(--color-purple)"></div>
+        <div class="color-dot" style="background:var(--color-sky)"></div>
+        <div class="color-dot" style="background:var(--color-green)"></div>
+        <div class="color-dot" style="background:var(--color-yellow)"></div>
+        <div class="color-dot" style="background:var(--color-orange)"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════
+     APPLICATION MODAL
+══════════════════════════════════ -->
+<div class="modal-overlay" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Lukk">✕</button>
+    <div class="section-tag" style="background:rgba(142,36,170,0.1);color:var(--color-purple);margin-bottom:0.5rem;">Søknadsskjema</div>
+    <h2 id="modal-title" style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;margin:0 0 0.4rem;">Søk nå</h2>
+    <p id="modal-project-title" style="color:var(--color-purple);font-weight:600;font-size:0.9rem;margin:0 0 1.5rem;"></p>
+
+    <form id="apply-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="af-name">Fullt navn *</label>
+          <input type="text" id="af-name" name="name" placeholder="Ditt fulle navn" required />
+        </div>
+        <div class="form-group">
+          <label for="af-age">Alder *</label>
+          <input type="number" id="af-age" name="age" placeholder="Din alder" min="15" max="35" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="af-email">E-post *</label>
+        <input type="email" id="af-email" name="email" placeholder="din@epost.no" required />
+      </div>
+      <div class="form-group">
+        <label for="af-country">Land *</label>
+        <input type="text" id="af-country" name="country" placeholder="Ditt land" required />
+      </div>
+      <div class="form-group">
+        <label for="af-motivation">Motivasjonsbrev *</label>
+        <textarea id="af-motivation" name="motivation" placeholder="Hvorfor ønsker du å delta? (maks 300 ord)" style="min-height:110px;" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem;">
+        Send søknad
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SCRIPTS
+══════════════════════════════════ -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
