@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youth Network — Frivillig organisasjon i Drammen som styrker ungdommen gjennom Erasmus+ prosjekter, interkulturell dialog og samfunnsengasjement." />
+  <meta name="keywords" content="Youth Network, Drammen, ungdom, frivillig, bærekraft, inkludering, interkulturell" />
+  <meta name="author" content="Youth Network" />
+  <meta property="og:title" content="Youth Network — Styrker ungdommen for en bærekraftig fremtid" />
+  <meta property="og:description" content="Frivillig ungdomsorganisasjon i Drammen, Norge. OID: E10341853" />
+  <meta property="og:type" content="website" />
+  <title>Youth Network — Styrker ungdommen for en bærekraftig fremtid</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%238E24AA'/><text y='67' x='50' text-anchor='middle' font-size='52' fill='white' font-family='sans-serif' font-weight='900'>Y</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar-container">
+      <div class="nav-logo-mark"><a href="index.html">YN</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav-label>Hjem</a></li>
+        <li><a href="om-oss.html" data-nav-label>Om oss</a></li>
+        <li><a href="prosjekter.html" data-nav-label>Prosjekter</a></li>
+        <li><a href="muligheter.html" data-nav-label>Muligheter</a></li>
+        <li><a href="kontakt.html" data-nav-label>Kontakt</a></li>
+      </ul>
+      <button class="lang-toggle">🇬🇧 EN</button>
+      <button id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <ul id="mobile-menu">
+      <li><a href="index.html" data-nav-label>Hjem</a></li>
+      <li><a href="om-oss.html" data-nav-label>Om oss</a></li>
+      <li><a href="prosjekter.html" data-nav-label>Prosjekter</a></li>
+      <li><a href="muligheter.html" data-nav-label>Muligheter</a></li>
+      <li><a href="kontakt.html" data-nav-label>Kontakt</a></li>
+      <li style="padding: 1rem 2rem;"><button class="lang-toggle" style="width: 100%;">🇬🇧 EN</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section - Diagonal Split -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Drammen, Norge · Est. 2023</p>
+      <h1 class="hero-title">
+        <span>Styrker ungdommen</span>
+        <span>for en bærekraftig</span>
+        <span>fremtid</span>
+      </h1>
+      <p class="hero-subtitle">
+        Youth Network er et flerkulturelt fellesskap som jobber for inkludering, europeisk dialog og en bedre fremtid for unge mennesker.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" onclick="window.location.href='prosjekter.html'">Utforsk våre prosjekter</button>
+        <button class="btn btn-secondary" onclick="window.location.href='muligheter.html'">Bli med oss</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="geo-shape geo-1"></div>
+      <div class="geo-shape geo-2"></div>
+      <div class="geo-shape geo-3"></div>
+    </div>
+  </section>
+
+  <!-- Core Areas Section -->
+  <section class="page-section">
+    <div class="section-header">
+      <h2 class="section-title">Våre kjerneområder</h2>
+      <p class="section-desc">Vi jobber innen fire hovedfelt for å styrke ungdommen</p>
+    </div>
+    <div class="content-grid">
+      <div class="content-block fade-up">
+        <div style="margin-bottom: 2rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌍</div>
+              <h3>Interkulturell dialog</h3>
+              <p>Fremme toleranse og solidaritet for å bekjempe xenofobi og rasisme.</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌱</div>
+              <h3>Bærekraft & miljø</h3>
+              <p>Øke bevisstheten om klimakrisen og forurensning, samt fremme grønn mobilitet.</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤝</div>
+              <h3>Aktivt medborgerskap</h3>
+              <p>Styrke ungdoms samfunnsengasjement, demokrati og ytringsfrihet.</p>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">⚽</div>
+              <h3>Inkludering via idrett</h3>
+              <p>Fremme en aktiv og sunn livsstil, mental helse og velvære.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="visual-block fade-up"></div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section style="background: white; padding: 5rem 2rem;">
+    <div class="section-header">
+      <h2 class="section-title">Hvem er vi</h2>
+      <p class="section-desc">Et flerkulturelt team dedikert til ungdommens framtid</p>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 2rem;">
+        Youth Network er en frivillig organisasjon etablert i 2023 i Drammen. Vi er et flerkulturelt team bestående av både ungdommer med innvandrerbakgrunn og ungdommer av norsk opprinnelse. Vårt formål er å styrke ungdoms aktive medborgerskap, internasjonale forståelse og deltakelse i samfunnet.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+        <div class="stat-block fade-up">
+          <div class="stat-number">2023</div>
+          <div class="stat-label">Grunnlagt</div>
+        </div>
+        <div class="stat-block fade-up">
+          <div class="stat-number">E1034</div>
+          <div class="stat-label">OID Organisasjonsnummer</div>
+        </div>
+        <div class="stat-block fade-up">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Europeisk nettverk</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h5>Youth Network</h5>
+        <p>
+          En frivillig organisasjon dedikert til å styrke ungdommen gjennom samfunnsengasjement, interkulturell dialog og europeisk samarbeid.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h5>Kontakt</h5>
+        <p>E-post: Youthnetwork.no@gmail.com</p>
+        <p>Sted: Drammen, Norge</p>
+        <p>OID: E10341853</p>
+      </div>
+      <div class="footer-section">
+        <h5>Lenker</h5>
+        <a href="index.html">Hjem</a><br />
+        <a href="om-oss.html">Om oss</a><br />
+        <a href="prosjekter.html">Prosjekter</a><br />
+        <a href="muligheter.html">Muligheter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="year">2025</span> Youth Network. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
+
+  <!-- Modal (Application Form) -->
+  <div id="apply-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-project-title">Søknad</h3>
+        <button id="modal-close">&times;</button>
+      </div>
+      <form id="apply-form">
+        <div class="form-group">
+          <label for="apply-name">Ditt navn</label>
+          <input type="text" id="apply-name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="apply-email">E-post</label>
+          <input type="email" id="apply-email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="apply-msg">Hvorfor ønsker du å delta?</label>
+          <textarea id="apply-msg" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send søknad</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
